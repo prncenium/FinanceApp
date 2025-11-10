@@ -9,6 +9,7 @@ import CategoriesPage from "./pages/CategoriesPage";
 import BudgetsPage from "./pages/BudgetPage";
 import GoalsPage from "./pages/GoalPage";
 import TransferPage from "./pages/TransferPage";
+import {Navigate} from 'react-router-dom';
 
 
 function App() {
