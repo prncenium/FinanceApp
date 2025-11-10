@@ -4,6 +4,11 @@ import RegisterPage from "./pages/RegisterPage"
 import ProtectedRoute from "./routes/protectedRoute";
 import DashboardPage from "./pages/DashboardPage";
 import Navbar from "./components/layout/Navbar";
+import ExpensesPage from "./pages/ExpensesPage";
+import CategoriesPage from "./pages/CategoriesPage";
+import BudgetsPage from "./pages/BudgetPage";
+import GoalsPage from "./pages/GoalPage";
+import TransferPage from "./pages/TransferPage";
 
 
 function App() {
@@ -21,6 +26,11 @@ function App() {
           <Route element={<ProtectedRoute/>}>
             
             <Route path="/dashboard" element={<DashboardPage/>} />
+            <Route path='/expenses' element={<ExpensesPage/>} />
+            <Route path='/categories' element={<CategoriesPage/>} />
+            <Route path="/budgets" element={<BudgetsPage/>} />
+            <Route path="/goals" element={<GoalsPage/>} />
+            <Route path="/transfer" element={<TransferPage/>} />
           </Route>
           
         </Routes>

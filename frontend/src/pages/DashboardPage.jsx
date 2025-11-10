@@ -6,7 +6,7 @@ function DashboardPage() {
   return (
     <>
   
-    <div className="bg-blue-400 p-10 text-center">
+    <div className="bg-blue-800  text-center">
       <h1 className="p-8 text-3xl font-bold text-yellow-200">
         DASHBOARD
       </h1>
