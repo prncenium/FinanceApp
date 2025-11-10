@@ -15,7 +15,7 @@ function ProtectedRoute(){
     return (
         <>
             <Navbar />   {/* iski help sei jitne bhi protected routes h, sub par Navbar show hoga... baar baar individually show krne ki no need now */}
-            <Outlet />;  { /* basicallyc ye outlet will replace with either /dashboar or any route, where user wanna go */}
+            <Outlet />  { /* basicallyc ye outlet will replace with either /dashboar or any route, where user wanna go */}
         </>
     )
 }
