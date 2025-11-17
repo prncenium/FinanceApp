@@ -25,9 +25,11 @@ A robust **Full-Stack MERN Application** designed to help users manage personal 
 ### 🛠️ Tech Stack
 
 **Frontend**
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
-![Vite](https://img.shields.io/badge/Vite-B73BFE?style=for-the-badge&logo=vite&logoColor=white)
+<p>
+  <img src="[https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)" />
+  <img src="[https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)" />
+  <img src="[https://img.shields.io/badge/Vite-B73BFE?style=for-the-badge&logo=vite&logoColor=white](https://img.shields.io/badge/Vite-B73BFE?style=for-the-badge&logo=vite&logoColor=white)" />
+</p>
 
 * **React:** Core library for UI.
 * **React Router DOM:** Declarative navigation.
@@ -36,10 +38,12 @@ A robust **Full-Stack MERN Application** designed to help users manage personal 
 * **Tailwind CSS:** Utility-first styling.
 
 **Backend**
-![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
-![Express.js](https://img.shields.io/badge/Express.js-404D59?style=for-the-badge&logo=express&logoColor=white)
-![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)
-![JWT](https://img.shields.io/badge/JWT-000000?style=for-the-badge&logo=json-web-tokens&logoColor=white)
+<p>
+  <img src="[https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)" />
+  <img src="[https://img.shields.io/badge/Express.js-404D59?style=for-the-badge&logo=express&logoColor=white](https://img.shields.io/badge/Express.js-404D59?style=for-the-badge&logo=express&logoColor=white)" />
+  <img src="[https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)" />
+  <img src="[https://img.shields.io/badge/JWT-000000?style=for-the-badge&logo=json-web-tokens&logoColor=white](https://img.shields.io/badge/JWT-000000?style=for-the-badge&logo=json-web-tokens&logoColor=white)" />
+</p>
 
 * **Node.js & Express:** Runtime and framework for the API.
 * **MongoDB & Mongoose:** Database and Object Data Modeling.
@@ -65,39 +69,3 @@ Navigate to the backend folder and install dependencies:
 ```bash
 cd Backend
 npm install
-
-Create a .env file in the Backend root directory:
-PORT=3000
-DATABASE_URI=your_mongodb_connection_string_here
-JWT_SECRET_KEY=enter_a_strong_random_secret_string
-
-Start the server:
-npm run dev
-
-#### 3. Frontend Setup
-  Open a new terminal, navigate to the frontend folder, and install dependencies:
-  cd frontend
-  npm install
-
-Create a .env file in the frontend root directory:
-VITE_API_BASE_URL=http://localhost:3000/api/v1
-
-Start the client:
-npm run dev
-
-📂 Project Structure
-
-The project follows a clean Separation of Concerns architecture.
-
-Backend (/Backend/src),Responsibility
-controllers/,Business logic for handling requests.
-routes/,Defines API endpoints mapped to controllers.
-models/,"Mongoose schemas (User, Expense, Budget)."
-middleware/,Security checks (JWT validation).
-
-Frontend (/frontend/src),Responsibility
-pages/,"Main screens (Dashboard, Login, Expenses)."
-components/,"Reusable UI (Navbar, Forms, Tables)."
-context/,Global state (Authentication).
-services/,Centralized API fetching logic (Axios).
-
