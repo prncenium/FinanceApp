@@ -58,13 +58,13 @@ Follow these instructions to set up the project locally.
 * MongoDB installed locally or a MongoDB Atlas account.
 
 #### 1. Database Setup
-Set up your MongoDB database and get your **Connection String (URI)**.
+  Set up your MongoDB database and get your **Connection String (URI)**.
 
 #### 2. Backend Setup
-Navigate to the backend folder and install dependencies:
+  Navigate to the backend folder and install dependencies:
 
-cd Backend
-npm install
+  cd Backend
+  npm install
 
 Create a .env file in the Backend root directory:
 PORT=3000
@@ -74,10 +74,10 @@ JWT_SECRET_KEY=enter_a_strong_random_secret_string
 Start the server:
 npm run dev
 
-3. Frontend Setup
-Open a new terminal, navigate to the frontend folder, and install dependencies:
-cd frontend
-npm install
+####3. Frontend Setup
+  Open a new terminal, navigate to the frontend folder, and install dependencies:
+  cd frontend
+  npm install
 
 Create a .env file in the frontend root directory:
 VITE_API_BASE_URL=http://localhost:3000/api/v1
@@ -86,6 +86,7 @@ Start the client:
 npm run dev
 
 📂 Project Structure
+
 The project follows a clean Separation of Concerns architecture.
 
 Backend (/Backend/src),Responsibility
