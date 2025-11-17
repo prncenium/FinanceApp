@@ -74,7 +74,7 @@ JWT_SECRET_KEY=enter_a_strong_random_secret_string
 Start the server:
 npm run dev
 
-3. Frontend Setup
+#### 3. Frontend Setup
   Open a new terminal, navigate to the frontend folder, and install dependencies:
   cd frontend
   npm install
