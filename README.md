@@ -98,3 +98,7 @@ Start the client:
 ```bash
 npm run dev
 ```
+
+📂 Project StructureThe
+project follows a clean Separation of Concerns architecture.
+🔙 Backend Structure (/Backend/src)DirectoryResponsibilitycontrollers/Contains the business logic for handling requests.routes/Defines API endpoints and maps them to controllers.models/Mongoose schemas (User, Expense, Budget).middleware/Security checks and token validation (JWT).⚛️ Frontend Structure (/frontend/src)DirectoryResponsibilitypages/Main application screens (Dashboard, Login, Expenses).components/Reusable UI elements (Navbar, Forms, Tables).context/Global state management (Authentication/Token).services/Centralized API fetching logic (Axios instances).
