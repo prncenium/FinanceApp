@@ -69,3 +69,16 @@ Navigate to the backend folder and install dependencies:
 ```bash
 cd Backend
 npm install
+```
+
+Create a .env file in the Backend root directory:
+
+PORT=3000
+DATABASE_URI=your_mongodb_connection_string_here
+JWT_SECRET_KEY=enter_a_strong_random_secret_string
+
+Start the server:
+
+```bash
+npm run dev
+```
