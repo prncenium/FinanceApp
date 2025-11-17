@@ -58,13 +58,13 @@ Follow these instructions to set up the project locally.
 * MongoDB installed locally or a MongoDB Atlas account.
 
 #### 1. Database Setup
-  Set up your MongoDB database and get your **Connection String (URI)**.
+Set up your MongoDB database and get your **Connection String (URI)**.
 
 #### 2. Backend Setup
-  Navigate to the backend folder and install dependencies:
-
-  cd Backend
-  npm install
+Navigate to the backend folder and install dependencies:
+```bash
+cd Backend
+npm install
 
 Create a .env file in the Backend root directory:
 PORT=3000
