@@ -82,3 +82,19 @@ Start the server:
 ```bash
 npm run dev
 ```
+#### 3. Frontend Setup
+Open a new terminal, navigate to the frontend folder, and install dependencies:
+```bash
+cd frontend
+npm install
+```
+
+Create a .env file in the frontend root directory:
+
+VITE_API_BASE_URL=http://localhost:3000/api/v1
+
+Start the client:
+
+```bash
+npm run dev
+```
