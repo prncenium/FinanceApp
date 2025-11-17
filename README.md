@@ -74,7 +74,7 @@ JWT_SECRET_KEY=enter_a_strong_random_secret_string
 Start the server:
 npm run dev
 
-####3. Frontend Setup
+3. Frontend Setup
   Open a new terminal, navigate to the frontend folder, and install dependencies:
   cd frontend
   npm install
@@ -90,14 +90,22 @@ npm run dev
 The project follows a clean Separation of Concerns architecture.
 
 Backend (/Backend/src),Responsibility
+
 controllers/,Business logic for handling requests.
+
 routes/,Defines API endpoints mapped to controllers.
+
 models/,"Mongoose schemas (User, Expense, Budget)."
+
 middleware/,Security checks (JWT validation).
 
 Frontend (/frontend/src),Responsibility
+
 pages/,"Main screens (Dashboard, Login, Expenses)."
+
 components/,"Reusable UI (Navbar, Forms, Tables)."
+
 context/,Global state (Authentication).
+
 services/,Centralized API fetching logic (Axios).
 
