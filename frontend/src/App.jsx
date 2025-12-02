@@ -4,8 +4,8 @@ import RegisterPage from "./pages/RegisterPage"
 import ProtectedRoute from "./routes/protectedRoute";
 import DashboardPage from "./pages/DashboardPage";
 import Navbar from "./components/layout/Navbar";
-import DashboardPage from "./pages/DashboardPage"; 
-import MainLayout from "./components/layout/MainLayout"; // Import the new layout
+
+
 import ExpensesPage from "./pages/ExpensesPage";
 import CategoriesPage from "./pages/CategoriesPage";
 import BudgetsPage from "./pages/BudgetPage";
@@ -25,11 +25,11 @@ function App() {
           <Route path='/login' element ={ <LoginPage/> } />
           <Route path='/register' element={<RegisterPage/>} />
 
-          {/* {protected routes yha pe } */}
-          <Route element={<ProtectedRoute/>}>
+          
+          
             
-          {/* Wrap protected routes in MainLayout */}
-          <Route element={<ProtectedRoute><MainLayout /></ProtectedRoute>}>
+          {/* {protected routes yha pe } */}
+          <Route element={<ProtectedRoute></ProtectedRoute>}>
             <Route path="/dashboard" element={<DashboardPage/>} />
             <Route path='/expenses' element={<ExpensesPage/>} />
             <Route path='/categories' element={<CategoriesPage/>} />

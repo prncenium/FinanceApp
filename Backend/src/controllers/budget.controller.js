@@ -15,15 +15,19 @@ const setBudget = async(req,res)=>{
         if(budget){
             budget.amount = amount;
             budget.period = period;
+            await budget.save();
         }
         else{
             budget = new Budget({ user:userId, category:categoryId, amount, period});
+            await budget.save();
         }
 
-        await budget.save();
-        res.status(200).json(budget);
+        // This ensures the frontend gets the Category Name, not just the ID
+        const populatedBudget = await Budget.findById(budget._id).populate('category', 'name type');
+        res.status(200).json(populatedBudget);
     }
     catch(error){
+        console.error("Error in setBudget:", error.message);
         res.status(500).json({ msg: 'Server Error' });
     }
 };
@@ -37,6 +41,7 @@ const getBudget = async(req,res)=>{
         res.status(200).json(budget);
     }
     catch(error){
+        console.error("Error in getBudget:", error.message);
         res.status(500).json({ msg: 'Server Error' });
     }
 }
@@ -59,6 +64,8 @@ const updateBudget = async(req,res)=>{
         budget.period = period;
 
         await budget.save();
+        //populate before sending budget
+        await budget.populate('category', 'name type');
         res.status(200).json(budget);
 
     }

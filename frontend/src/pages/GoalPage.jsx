@@ -48,7 +48,7 @@ function GoalsPage() {
   };
 
   const handleAddSavings = async (goalId) => {
-    const amount = 50; 
+    const amount = 10; 
     try {
       const response = await addSavingsToGoal(goalId, amount);
     
@@ -134,7 +134,7 @@ function GoalsPage() {
                   onClick={() => handleAddSavings(goal._id)}
                   className="mt-4 bg-indigo-600 text-white font-medium px-4 py-2 text-base rounded-md hover:bg-indigo-700"
                 >
-                  Add $50 Savings
+                  Add ₹10 Savings
                 </button>
               </div>
             );

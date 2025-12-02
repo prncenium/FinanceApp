@@ -10,6 +10,7 @@ const expenseRoutes = require('./routes/expense.routes.js');
 const transferRoutes = require('./routes/transfer.routes.js');
 const budgetRoutes = require('./routes/budget.routes.js');
 const goalRoutes = require('./routes/goal.routes.js');
+const userRoutes = require('./routes/user.routes.js');
 
 const app = express();
 
@@ -32,6 +33,7 @@ app.use('/api/v1/expenses', expenseRoutes)
 app.use('/api/v1/transfers', transferRoutes);
 app.use('/api/v1/budgets', budgetRoutes);
 app.use('/api/v1/goals', goalRoutes);
+app.use('/api/v1/user', userRoutes);
 
 
 module.exports = app;
